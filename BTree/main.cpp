@@ -1,14 +1,15 @@
-//
-//  main.cpp
-//  BTree
-//
-//  Created by 孙永杰 on 2022/5/5.
-//
-
-#include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#include "bTree.h"
+int main()
+{
+	//char* c = "abcdeg###f##h";
+    char c[] = "abcdeg###f##h";
+	BTree a(c, 13);
+	a.PrintPreOrder();
+	a.PrintInOrder();
+	a.PrintPostOrder();
+	BTree b;
+	b.PrintPreOrder();
+	b.PrintInOrder();
+	b.PrintPostOrder();
+	return 0;
 }
